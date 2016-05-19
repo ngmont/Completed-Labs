@@ -27,7 +27,7 @@
  *      Display value on its own line
  *   END FOR
  *END Lab01 - Array Input Using Sentinel Value
- *********************************************************************/
+    /**********************************************************/
 
 #include <iostream>
 #include <iomanip>
@@ -48,57 +48,63 @@ int main()
 
 
 
-    	/**************************start main program*********************/
+    /**************************start main program*********************/
     //BEGIN Array Input Using Sentinel Value
 
     //Input first value or quit value
-    cout << "Enter Value or QUIT: ";
+    cout << "\n"; 
+    cout << setw(48) << "Empty Array Lab" << endl; 
+    cout << "\n";
+    cout << setw(50) << "Enter Value or QUIT: ";
     cin  >> Value; 
 
     //WHILE (User did not enter the quit value) 
     while (Value != QUIT)
     {
 
-    //Store the input in the array at position Count
+        //Store the input in the array at position Count
     	Empty_Array[Count] = Value;
-    	//Increment Count by 1
+    	
+       //Increment Count by 1
        Count ++;
   
-    //IF (the array has been filled)
-    if (Count == SIZE)
-    {
-    //Output message indicating max inputs have been reached
-       cout << "Array is now full";
-    //Set the Input variable to the quit value
-       QUIT >> Value;
+       //IF (the array has been filled)
+       if (Count == SIZE)
+       {
+         //Output message indicating max inputs have been reached
+         cout << "Array is now full";
+         
+        //Set the Input variable to the quit value
+        QUIT >> Value;
+        }
+     
+       //elsethe array has not been filled
+       else  	
+          //Prompt the user for next input value or quit value
+         cout << "\n";
+         cout << setw(50) << "Enter Value or QUIT: ";
+         cin  >> Value; 
 
-     //ELSE //the array has not been filled
-    }
-    else  	
-    //Prompt the user for next input value or quit value
-       cout << "Enter Value or QUIT: ";
-       cin  >> Value; 
 
-    //END WHILE 
-    }
+     //END WHILE 
+     }
 
     //Clear Screen
-    //system("cls");
+    system("cls");
 
     //Display Heading
-    cout << "Values in the Array" << endl;
+    cout << "\n"; 
+    cout << setw(49) << "Values in the Array" << endl;
 
     //FOR (Each value in the array)
     for(Pos = 0; Pos < Count; Pos ++)
     {
-
     //Display value on its own line
-    cout << Empty_Array [Pos] << endl;
+    cout << "\n";
+    cout << setw(40) << Empty_Array [Pos] << endl;
 
     }//END FOR
 
     cout << endl;
     
 }//END Lab01 - Array Input Using Sentinel Value
-
-
