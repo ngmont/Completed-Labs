@@ -89,7 +89,7 @@ int main()
         
         //Ask user for a new number or QUIT
            cout << "\n"; 
-           cout << setw(38) << "Enter number or QUIT: ";
+           cout << setw(50) << "Enter number or QUIT: ";
            cin  >> Num; 
     
   
