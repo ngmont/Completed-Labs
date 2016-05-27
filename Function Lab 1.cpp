@@ -43,11 +43,11 @@ int main()
 	//local constants
     string P;          //power operation
     string A;          //absolute power operation
-    int Q == 0;        //sentinal value
+    int Q = 0;        //sentinal value
 
 	//local variables
-    int Num 1;         //first number entered
-    int Num 2;         //second number entered
+    int Num_1;         //first number entered
+    int Num_2;         //second number entered
     string Opp;        //operation chosen
     int Ans;           //answer
 
@@ -67,21 +67,21 @@ int main()
 
             //Input 2 #'s
        	    cout << "Enter first number: ";
-       	    cin  >> Num 1; 
+       	    cin  >> Num_1; 
        	    cout << "Enter second number: ";
-       	    cin  >> Num 2; 
+       	    cin  >> Num_2; 
 
             //IF (Operations Power)
             if (Opp == P){ 
 
                //Answer = 1st # raised to 2nd power)
-               Ans = pow (Num 1, Num 2); 
+               Ans = pow (Num_1, Num_2); 
                          }
             //ELSE opperator is power
             else if (Opp == A){
 
                 //Answer = Absolute VAlue of 1st - 2nd
-                Ans = abs(Num 1) - abs(Num 2); 
+                Ans = abs(Num_1) - abs(Num_2); 
                                } //END IF
             //Dispaly Answers
             cout << "Answer is: " << Ans << endl; 
@@ -90,7 +90,7 @@ int main()
             else
 
             //Dispaly Error	
-            coud << "Error"; 
+            cout << "Error"; 
             	
        //Input Operation
        cout << "Input Opperation Abs Value (A), Power (P) or QUIT (Q): "; 
