@@ -38,6 +38,7 @@
 #include <ctime>
 #include <string>
 #include <locale>
+#include <cmath>
 using namespace std;
 
 int main()
@@ -61,6 +62,7 @@ int main()
        cout << "Input operation Abs Value (A), Power (P) or QUIT (Q): "; 
        cin  >> Opp; 
        //check to see if Opp is uppercase (if not, we'll convert to uppercase)
+       
        if(islower(Opp))
           { //Convert Operation to uppercase
            Opp = toupper(Opp); }
@@ -79,30 +81,34 @@ int main()
             
                //Answer = 1st # raised to 2nd power)
                Ans = pow(Num_1, Num_2); 
+               //Display answer
+               cout << "Answer is: " << Ans << endl;
                                        }
             //ELSE opperator is power
             else if (Opp == 'A'){
                 
                 //Answer = Absolute VAlue of 1st - 2nd
                 Ans = abs((Num_1) - (Num_2)); 
+                //Display answer 
+                cout << "Answer is: " << Ans << endl;
                                } //END IF
-            //Dispaly Answers
-            cout << "Answer is: " << Ans << endl; 
-                              
+   
             //ELSE 
             else
             {
             //Dispaly Error	
             cout << "Error"; }
+    
+             
+                              
             	
        //Input Operation
        cout << "Input Opperation Abs Value (A), Power (P) or QUIT (Q): "; 
        cin  >> Opp; 
+       
+       if(islower(Opp))
+          { //Convert Operation to uppercase
+           Opp = toupper(Opp); }
 
-       //Convert Operation to uppercase
-       char toupper (Opp); 
     }   
     //END WHILE
-    
-} 
-//END Function Lab	
