@@ -1,36 +1,36 @@
-/********************************************************************
- *Program Name   :  Function Lab 1
- *Author         :  Natalia Montilla
- *Date           :  April 20th, 2016
- *Course/Section :  CSC110-002
-*Program Description: Ask the user to input ‘A’ for absolute value or ‘P’ for 
-*power or ‘Q’ for quit.  As long as the user didn’t quit then input two numbers.  
-*If they chose ‘A’ then find the absolute value of (the first number minus the second 
-*number). If they chose ‘P’ then raise the first number to the power of the second 
-*number.  Display the answer.  If the user entered an invalid input, display an 
-*error.  Finally, prompt the user to perform another operation. I should be able 
-*to input upper or lower case letters.
-*
-*BEGIN Function Lab
-*  Input Operation
-*  Convert Operation to uppercase
-*  WHILE (Operation != QUIT)
-*     IF (Operation is valid)
-*        Input 2 #'s
-*     IF (Operations Power)
-*        Answer = 1st # raised to 2nd power)
-*     ELSE
-*        Answer = Absolute VAlue of 1st - 2nd
-*     END IF 
-*     Display Answers
-*     ELSE 
-*     Display Error
-*     END IF 
-*  Input operation
-*  Convert opperation to uppercase
-*  END WHILE 
-*END Function Lab	
-    /********************************************************************/
+//********************************************************************
+// *Program Name   :  Function Lab 1
+ //*Author         :  Natalia Montilla
+ //*Date           :  April 20th, 2016
+ //*Course/Section :  CSC110-002
+//*Program Description: Ask the user to input ‘A’ for absolute value or ‘P’ for 
+//*power or ‘Q’ for quit.  As long as the user didn’t quit then input two numbers.  
+//*If they chose ‘A’ then find the absolute value of (the first number minus the second 
+//*number). If they chose ‘P’ then raise the first number to the power of the second 
+//*number.  Display the answer.  If the user entered an invalid input, display an 
+//*error.  Finally, prompt the user to perform another operation. I should be able 
+//*to input upper or lower case letters.
+//*
+//*BEGIN Function Lab
+//*  Input Operation
+//*  Convert Operation to uppercase
+//*  WHILE (Operation != QUIT)
+//*     IF (Operation is valid)
+//*        Input 2 #'s
+//*     IF (Operations Power)
+//*        Answer = 1st # raised to 2nd power)
+//*     ELSE
+//*        Answer = Absolute VAlue of 1st - 2nd
+//*     END IF 
+//*     Display Answers
+//*     ELSE 
+//*     Display Error
+//*     END IF 
+//*  Input operation
+//*  Convert opperation to uppercase
+//*  END WHILE 
+//*END Function Lab	
+    //********************************************************************//
 
 #include <iostream>
 #include <iomanip>
@@ -52,6 +52,7 @@ int main()
     int Ans;           //answer
 
        /**************************start main program*********************/
+       
 //BEGIN Function Lab.
 
        //Input Operation
@@ -90,7 +91,7 @@ int main()
             else
 
             //Dispaly Error	
-            cout << "Error"; 
+            coud << "Error"; 
             	
        //Input Operation
        cout << "Input Opperation Abs Value (A), Power (P) or QUIT (Q): "; 
