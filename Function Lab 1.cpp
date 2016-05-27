@@ -46,21 +46,22 @@ int main()
 	//local constants
     string P;          //power operation
     string A;          //absolute power operation
-    string Q = 0;        //sentinal value
-
 	//local variables
     int Num_1;         //first number entered
     int Num_2;         //second number entered
     char Opp;        //operation chosen
     int Ans;           //answer
-
+    string input; // buffer for input
        /**************************start main program*********************/
        
 //BEGIN Function Lab.
 
        //Input Operation
        cout << "Input operation Abs Value (A), Power (P) or QUIT (Q): "; 
-       cin  >> Opp; 
+       cin  >> input;
+
+       // first character only from input
+       Opp = input[0]; 
        //check to see if Opp is uppercase (if not, we'll convert to uppercase)
        
        if(islower(Opp))
@@ -68,7 +69,8 @@ int main()
            Opp = toupper(Opp); }
 
        // WHILE (Operation != QUIT)
-       while (Opp == 'Q'){
+       cout << Opp << endl;
+       while (Opp != 'Q'){
 
             //Input 2 #'s
        	    cout << "Enter first number: ";
