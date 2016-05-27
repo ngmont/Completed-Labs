@@ -54,10 +54,13 @@ int main()
     string input; // buffer for input
        /**************************start main program*********************/
        
-//BEGIN Function Lab.
+    //BEGIN Function Lab.
 
        //Input Operation
-       cout << "Input operation Abs Value (A), Power (P) or QUIT (Q): "; 
+       cout << "\n";
+       cout << setw(30) << "Function Lab" << endl; 
+       cout << "\n"; 
+       cout << setw(26) << "Input operation Abs Value (A), Power (P) or QUIT (Q): "; 
        cin  >> input;
 
        // first character only from input
@@ -69,14 +72,17 @@ int main()
            Opp = toupper(Opp); }
 
        // WHILE (Operation != QUIT)
-       cout << Opp << endl;
+
        while (Opp != 'Q'){
 
             //Input 2 #'s
-       	    cout << "Enter first number: ";
+            cout << "\n";
+       	    cout << setw(36) << "Enter first number: ";
        	    cin  >> Num_1; 
-       	    cout << "Enter second number: ";
+       	    cout << "\n";
+       	    cout << setw(37) << "Enter second number: ";
        	    cin  >> Num_2; 
+       	    cout << "\n";
 
             //IF (Operations Power)
             if (Opp == 'P'){ 
@@ -84,7 +90,8 @@ int main()
                //Answer = 1st # raised to 2nd power)
                Ans = pow(Num_1, Num_2); 
                //Display answer
-               cout << "Answer is: " << Ans << endl;
+               cout << setw(31) << "Answer is: " << Ans << endl;
+               cout << "\n";
                                        }
             //ELSE opperator is power
             else if (Opp == 'A'){
@@ -105,7 +112,7 @@ int main()
                               
             	
        //Input Operation
-       cout << "Input Opperation Abs Value (A), Power (P) or QUIT (Q): "; 
+       cout << setw(26) << "Input operation Abs Value (A), Power (P) or QUIT (Q): "; 
        cin  >> Opp; 
        
        if(islower(Opp))
